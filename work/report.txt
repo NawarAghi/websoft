@@ -1,0 +1,20 @@
+1- Did you before know about the techniques Git, GitHub, Markdown and/or GitHub Pages?
+
+I know about Git and GitHub because in the first year we did a project and we connected it to GitHub. In the second year,
+I worked with GitHub desktop application because I found it more easier than using Git bash. However, I have never worked
+with GitHub pages before.
+
+2- Have you ever created websites before?
+
+I have never created websites before. However, I have worked a little bit with HTML and CSS before. So, I am familiar with
+some basics of HTML and CSS.
+
+3- Briefly explain your experience and knowledge of web application development.
+
+I have worked with HTML and CSS but a little bit. However, I studied Network Applications course which I learnt to work 
+with backend and create servers and clients using Java.
+
+4- What is your TIL for this course section?
+
+In the first assignment, I learnt to use GitHub pages and to fork. In addition, I became more familiar with Git bash,
+create tags using git bash.
