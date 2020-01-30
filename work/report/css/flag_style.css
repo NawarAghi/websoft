@@ -1,0 +1,35 @@
+{
+
+}
+
+.german {
+  height: 100px;
+  width: 180px;
+  background: linear-gradient(180deg, #000 33%, rgba(0, 0, 0, 0) 33%),
+  linear-gradient(180deg, #dd0000 66%, #ffc608 0%);
+  color: red;
+  }
+
+  .french {
+   height: 100px;
+   width: 180px;
+   background:linear-gradient(to right, #002495 0, #002495 33%, #FFF 33%, #FFF 66%, #ed2939 66%, #ed2939 100%);
+  }
+
+  .italian {
+  height: 100px;
+  width: 180px;
+  background:linear-gradient(to right, #009246 0, #009246 33%, #FFF 33%, #FFF 66%, #ce2b37 66%, #ce2b37 100%);
+
+  }
+
+  .box{
+    box-sizing: border-box;
+  }
+  .column{
+    flex: 33.33%;
+    padding: 5px;
+  }
+  .row {
+  display: flex;
+}
