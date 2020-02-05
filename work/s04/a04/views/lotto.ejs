@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Lotto</title>
+    <style media="screen">
+    body{
+      background-color: skyblue;
+      text-align: center;
+    }
+    #myOwn{
+        color: red;
+    }
+
+      table{
+        border-collapse: collapse;
+
+      }
+      table, th, td{
+        border: 1px solid black;
+        padding: 10px;
+
+      }
+
+      td{
+        font-size: 18px;
+      }
+
+      #tab2{
+        display: inline-table;
+        float: right;
+
+      }
+      #my{
+        display: inline-block;
+        float: left;
+        display: inline-table;
+
+      }
+      #loto{
+        color: #bd0d94;
+      }
+
+    </style>
+  </head>
+
+
+
+  <body>
+    <h1>Lotto</h1>
+    <% if(quer !=0){ %>
+    <table id ="my">
+      <tr>
+        <th>Lotto Numbers</th>
+        <th>My Numbers</th>
+      </tr>
+      <tr>
+        <td><%= lottoNumbers[0] %> </td>
+        <td id='myOwn'><%= myNumbers[0] %></td>
+      </tr>
+      <tr>
+        <td><%= lottoNumbers[1] %> </td>
+        <td id='myOwn'><%= myNumbers[1] %></td>
+      </tr>
+      <tr>
+        <td><%= lottoNumbers[2] %> </td>
+        <td id='myOwn'><%= myNumbers[2] %></td>
+      </tr>
+      <tr>
+        <td><%= lottoNumbers[3] %> </td>
+        <td id='myOwn'><%= myNumbers[3] %></td>
+      </tr>
+      <tr>
+        <td><%= lottoNumbers[4] %> </td>
+        <td id='myOwn'><%= myNumbers[4] %></td>
+      </tr>
+      <tr>
+        <td><%= lottoNumbers[5] %> </td>
+        <td id='myOwn'><%= myNumbers[5] %></td>
+      </tr>
+      <tr>
+        <td><%= lottoNumbers[6] %> </td>
+        <td id='myOwn'><%= myNumbers[6] %></td>
+      </tr>
+    </table>
+
+
+    <table id ="tab2">
+      <tr>
+        <th>Lotto Numbers</th>
+        <th>My Numbers</th>
+      </tr>
+      <tr>
+        <td id="loto"><%= lottoNumbers[0] %> </td>
+        <td ><%= myNumbers[0] %></td>
+      </tr>
+      <tr>
+        <td id="loto"><%= lottoNumbers[1] %> </td>
+        <td ><%= myNumbers[1] %></td>
+      </tr>
+      <tr>
+        <td id="loto"><%= lottoNumbers[2] %> </td>
+        <td ><%= myNumbers[2] %></td>
+      </tr>
+      <tr>
+        <td id="loto"><%= lottoNumbers[3] %> </td>
+        <td ><%= myNumbers[3] %></td>
+      </tr>
+      <tr>
+        <td id="loto"><%= lottoNumbers[4] %> </td>
+        <td ><%= myNumbers[4] %></td>
+      </tr>
+      <tr>
+        <td id="loto"><%= lottoNumbers[5] %> </td>
+        <td ><%= myNumbers[5] %></td>
+      </tr>
+      <tr>
+        <td id="loto"><%= lottoNumbers[6] %> </td>
+        <td ><%= myNumbers[6] %></td>
+      </tr>
+    </table>
+
+    <p>Your Matches Numbers are: <%= matches.length%></p>
+    <p><% if(matches.length !=0){%>
+      which are: <em style="color: red; font-weight: bold; "> <%= matches%> </em>
+      <% } %>
+    </p>
+    <%}else{%>
+      <p>Your Lotto numbers are: <%= lottoNumbers%></p>
+    <% }%>
+  </body>
+</html>
