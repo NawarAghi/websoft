@@ -23,6 +23,9 @@ Here are the slideshows.
 * [S02: HTML, CSS, JavaScript](s02-01-HTML-CSS-JavaScript)
 * [S03: JavaScript Core](s03-01-JavaScript_core)
 * [S04: Node.js](s04-01-Nodejs)
+* S06 JavaScript and PHP frameworks
+    * [PHP frameworks](s06-01-PHP_frameworks)
+    * [JavaScript frameworks](s06-02-JavaScript_frameworks)
 
 
 
