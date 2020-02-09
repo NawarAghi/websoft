@@ -1,0 +1,18 @@
+{
+  "Uttagsdatum": "2020-01-29T13:39:32.4590106+01:00",
+  "Fotnot": "sample string 2",
+  "Skolenheter": [
+    {
+      "Skolenhetskod": "sample string 1",
+      "Skolenhetsnamn": "sample string 2",
+      "Kommunkod": "sample string 3",
+      "PeOrgNr": "sample string 4"
+    },
+    {
+      "Skolenhetskod": "sample string 1",
+      "Skolenhetsnamn": "sample string 2",
+      "Kommunkod": "sample string 3",
+      "PeOrgNr": "sample string 4"
+    }
+  ]
+}
