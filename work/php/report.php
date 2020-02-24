@@ -116,13 +116,9 @@ them together in order to make webpages dynamiclly and more organized</p>
     Express, and to send Json files using Express.</p>
 </section>
 
-<section>
-<h2>S05</h2>
-<p>Here is the text for this section.</p>
-</section>
 
 <section>
-<h2>S06</h2>
+<h2>S05</h2>
 <p><em>1. How do you feel about PHP as a programming language?</em></p>
 <p>It's a pwerful, widely-used, open source, general-purpose and scripting
   language that is used for web development and to make HTML webpages more
@@ -146,6 +142,11 @@ them together in order to make webpages dynamiclly and more organized</p>
      to database through PHP, run Apache server and apply CRUD on database
      inside PHP files. In addition, I learnt about forms in HTML and how to
      use them properly</p>
+</section>
+
+<section>
+<h2>S06</h2>
+<p>Here is the text for this section.</p>
 </section>
 
 <section>
