@@ -1,0 +1,76 @@
+body{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding: 15px;
+}
+
+h2{
+	color:red;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+hr{
+	border: 2px solid black;
+}
+
+table, th, td {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 1px solid black;
+}
+
+table {
+	border-collapse: collapse; 
+	border: 1px solid black;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+a:active {
+  color: blue;
+}
+
+
+#authors{
+	font-weight: bold;
+	font-family: Sans-serif;
+	color: blue;
+}
+
+em {
+	font-size: 22px;
+}
+
+#improvments {
+	font-weight: bold;
+	font-family: Sans-serif;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

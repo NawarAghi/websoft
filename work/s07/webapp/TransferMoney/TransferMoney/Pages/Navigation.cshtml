@@ -1,0 +1,17 @@
+﻿@page
+@model NavigationModel
+@using TransferMoney.Components
+
+@{
+    ViewData["Title"] = "Navigation";
+
+
+}
+
+
+
+@(await Html.RenderComponentAsync<AccountsLists>(RenderMode.ServerPrerendered))
+
+<script src="_framework/blazor.server.js"></script>
+
+
