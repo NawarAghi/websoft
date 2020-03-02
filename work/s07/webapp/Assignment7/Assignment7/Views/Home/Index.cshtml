@@ -1,0 +1,41 @@
+﻿
+
+@{
+    ViewData["Title"] = "Home Page";
+
+    var accounts = new Assignment7.Services.Reader().GetAccounts();
+}
+
+    <div class="text-center">
+
+        @{if (accounts != null)
+            {
+                <table class="table">
+                    <tr class="thead-dark">
+                        <th>Number</th>
+                        <th>Balance</th>
+                        <th>Label</th>
+                        <th>Owner</th>
+                    </tr>
+
+                    @foreach (var account in accounts)
+                    {
+                        <tr>
+                            <th>@(account.Number)</th>
+                            <th>@(account.Balance)</th>
+                            <th>@(account.Label)</th>
+                            <th>@(account.Owner)</th>
+                        </tr>
+                    }
+                </table>
+            }
+            else
+            {
+                <p class="display-4">
+                    Error Fetching Data......
+                </p>
+            }
+        }
+    </div>
+
+

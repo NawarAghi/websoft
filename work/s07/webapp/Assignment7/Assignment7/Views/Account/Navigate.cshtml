@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewData["Title"] = "Navigator";
+    int direction = Convert.ToInt32(ViewData["direction"]);
+    Account account = new Assignment7.Services.Reader().GetAccounts().ToArray()[direction];
+
+
+}
+
+    <div class="text-center">
+        <h1>Navigator</h1>
+        <table class="table">
+            <tr class="thead-dark">
+                <th></th>
+                <th>Account Details</th>
+            </tr>
+            <tr>
+                <th>Number</th>
+                <th>@account.Number</th>
+            </tr>
+            <tr>
+                <th class="thead-dark">Balance</th>
+                <th>@account.Balance</th>
+            </tr>
+            <tr>
+                <th class="thead-dark">Label</th>
+                <th>@account.Label</th>
+            </tr>
+            <tr>
+                <th class="thead-dark">Owner</th>
+                <th>@account.Owner</th>
+            </tr>
+            <tr>
+                <th>
+                    <form method="POST" asp-controller="Account" asp-action="navigate" asp-route-direction=@(direction - 1)>
+                        <button type="submit" class="btn btn-secondary btn-sm">Previous</button>
+                    </form>
+                </th>
+                <th>
+                    <form method="POST" asp-controller="Account" asp-action="navigate" asp-route-direction=@(direction + 1)>
+                        <button type="submit" class="btn btn-secondary btn-sm">Next</button>
+                    </form>
+                </th>
+            </tr>
+        </table>
+
+    </div>
+

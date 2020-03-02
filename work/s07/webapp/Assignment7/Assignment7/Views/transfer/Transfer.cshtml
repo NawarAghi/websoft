@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "Transfer";
+}
+
+<div class="container">
+<div class="row">
+    <div class="col">
+        <h1>Transfer Money</h1><br>
+        <p>Use the form below to transfer money between two accounts.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-3">
+        <form method="POST" asp-controller="Transfer" asp-action="Transfer">
+            <input class="form-control input-text" type="number" name="source" placeholder="Source account number">
+            <input class="form-control input-text" type="number" name="destination" placeholder="Destination account number">
+            <input class="form-control input-text" type="number" name="amount" min="0" placeholder="Amount"><br>
+            <button type="submit" class="btn btn-secondary btn-sm">Confirm</button>
+        </form>
+    </div>
+</div>
+</div>
+
