@@ -368,7 +368,63 @@ them together in order to make webpages dynamiclly and more organized</p>
 
 <section>
 <h2>S09</h2>
-<p>Here is the text for this section.</p>
+<p><em>1. Elaborate on a few (3-5) different security issues or concerns, 
+from your own experience, related to web application security and relate 
+them to the OWASP top ten.</em></p>
+<ul>
+<li> <span style="color: blue;">Injections Attacks:</span>
+<p>In my first year, I started working on the connection between MYSQL database and applications. 
+Since then, I have been paying attention to SQL injections. Where the attacker can send SQL command through 
+an input to either get results from the databse or to change values in the databse. 
+Using PreparedStatement in Java helped me to prevent SQL injection, because the query and the 
+data are sent to the database separately.</p>
+</li>
+
+<li> <span style="color: blue;"> Insecure Deserialization:</span>
+<p> Insecure Deserialization is a vulnerability which occurs when untrusted data is used to 
+abuse the logic of an application. Deserialization is transforming serialized data coming from a 
+file, stream or network socket into an object. However, Successful insecure deserialization attacks 
+could allow an attacker to carry out denial-of-service (DoS) attacks, authentication bypasses 
+and remote code execution attacks. To prevent this attack, we should use JSON format instead 
+of binary native format, include positive validation based on signatures for serialized data,
+ avoid protection based on pattern matching such as WAF and DAST, and Prevent remote execution.</p>
+</li>
+
+<li> <span style="color: blue;"> Broken Access Control:</span>
+<p> Restrictions on what authenticated users are allowed to do are often not properly enforced. 
+Attackers can exploit these flaws to access unauthorized functionality and/or data, 
+such as access other users’ accounts. To prevent this attack, we should Implement access control 
+mechanisms once and re-use them throughout the application, including minimizing CORS usage, 
+enforce record ownership, rather than accepting that the user can create, read, update, or delete any record, 
+ ensure file metadata and backup files are not present within web roots.</p>
+</li>
+</ul>
+<p><em>2. Summarize by providing your own guidelines to a new web programmer on the topic 
+“The essential guidelines to follow to create secure web applications”.</em></p>
+<p> In order to build low-risk web-based applications, these steps should be taken in concerns:</p>
+<p>1. Query parameterisation: A web form comments box, data field or another area of a form that 
+allows free data entry, especially open string input, can lead to this vulnerability. To stop SQL injection, 
+we must prevent untrusted input from being interpreted as part of a SQL command by using for instance 
+prepared statement in Java</p>
+<br>
+<p>2. Secure password storage: The worst method for storing passwords is in plain text; 
+however, encryption isn’t much better because it’s reversible. To store passwords correctly, we should 
+ use a one-way algorithm such as SCRYPT and PBKDF2 , use a salt, and use an algorithm that is purposely slow, 
+ in order to prevent GPU cracking rigs</p>
+ <br>
+ <p>3.  Multi factor authentication: Using multi factor authentication helps us to protect our password 
+ and log-in credential. In order to show the correct person is loggin-in multi factor authentication 
+ is a great tool and servers this purpose. </p>
+ <br>
+ <p>4. Cross site request forgery: Once a user has logged into a secure site, if they were then to open 
+ another tab and inadvertently launch a malicious site, the site in question could host a forged 
+ request that could take advantage of the fact that the user is already logged in. To prevent this, we should
+  ask  users to re-authenticate to complete a transaction or event to prevent in-session hijacks.</p>
+<p><em>3. What is your TIL for this course section?</em></p>
+<p>I learnt today about the Open Web Application Security Project(OWASP) which is an online community
+ that gives useful information about web vulnerabilities and risks, and gives articles and tips 
+ in order to minimize or prevent these risks. I learnt about the most common risks in the web and 
+ how hackers can take advantage of these risks to attack and steal information and harm the websites and applications.</p>
 <hr>
 </section>
 
