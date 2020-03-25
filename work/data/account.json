@@ -31,8 +31,14 @@
   },
   {
     "Number": 49,
-    "Balance": 150,
+    "Balance": 0,
     "Label": "Nawar",
     "Owner": 50
+  },
+  {
+    "Number": 50,
+    "Balance": 250,
+    "Label": "Nano",
+    "Owner": 60
   }
 ]

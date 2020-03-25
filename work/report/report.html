@@ -439,7 +439,71 @@ however, encryption isn’t much better because it’s reversible. To store pass
 
 <section>
 <h2>S10</h2>
-<p>Here is the text for this section.</p>
+<p><em>Write a general paragraph about how the project was implemented. Problems / solutions 
+  / simple / difficult / fast / long time, etc. Was the project easy or difficult? 
+  Did it take a long time? What was difficult and what went easy? Was this a 
+  good and reasonable project for this course? How was it to work in a team?</em></p>
+
+  <p>Pinder is a social website for pets. As a project, Pinder was implemented by using React, 
+    NodeJs and MySQL. React was used to create the frontend (user’s interface), NodeJs was used 
+    to create the backend (the server) and MySQL was used to save user’s information, likes and pets. 
+    The users of Pinder can create an account, which is sent to the server for checking purpose 
+    (if the email is already exist in the database or not, and to check the password). Then, 
+    the account is saved in MySQL database, which the server sends the account’s 
+    information to the MySQL database
+    <br>As a member in a group, I worked on both frontend and backend. On frontend, I created Sign-in, 
+      Sign-up, About and Contact-us pages. In addition, I worked on user’s authentication, and protected 
+      pages mechanism (only authorized user can access these pages) On backend, I created APIs to add an
+       account to the database, checking if email exists or not, log-in, sending token to user for 
+       authentication and checking the authentication regularly. In addition, I made Contact-us and 
+       About pages to be sent by the server to the user. During my work, I have faced many challenges
+        and problems. In the beginning, I used the state in React to check if the user has logged-in or 
+        not, in order to change the navigation bar and to authorize the user to access the Profile page.
+         The problem with this approach is that if the user refreshes the website page the state returns
+          to false. Therefore, I changed to Json Web Token for authentication. The second problem was rendering 
+          the pictures after moving Contact-us page from frontend to backend. First, I tested the page on Postman 
+          and the images were working but were not on React. I solved the problem by adding an API to fetch the 
+          images, then, adding these APIs to the URL of the images
+      
+          <br>
+            However, the implementation of the project was moderate not easy nor difficult, 
+            because it is my first time, I work with React for creating frontend 
+            (different than using HTML, CSS). The second reason, it was a little bit tricky 
+            to implement user’s authentication. Although, the implementing of the project was 
+            quite long, but I learned so much and I expanded my knowledge. It was amusing to 
+            work with a team instead of working alone. Because, we divided the tasks, we helped 
+            each other, and we learned from each other.
+          </p>
+
+          <p><em>
+            Finish with a final paragraph with your thoughts on the course and what you think 
+            about the material and the guide (about 5-10 sentences). Provide feedback to teachers 
+            and suggest any improvement suggestions for upcoming course opportunities. 
+            Are you satisfied / dissatisfied? Will you recommend the course to your friends / colleagues? 
+            On a scale of 1-10, what grade do you give the course?
+          </em></p>
+          <p>
+            The course’s materials were organized, as well as the teacher. 
+            I enjoyed taking this course, because I learned so much from it.
+             I learned many web programming languages such as HTML, PHP, 
+             JavaScript and C#. In addition, I learned CSS, NodeJs, 
+             ASP.Net and React. Thanks to the teacher, the course 
+             had many assignments that helped to increase my knowledge 
+             and my practical skills. The project was good and reasonable 
+             to this course. Because, we had learned many programming languages 
+             and we hadn’t focused on one. The project gave us the opportunity 
+             to choose one programming language to improve our knowledge and skills in this programming language. 
+             Therefore, I chose to work with NodeJs and React, because in my opinion, they are the future of the web.
+          </p>
+          <p><em>What is your final TIL for this course?</em></p>
+          <p>
+            I learned how to create a simple web page by using HTML and CSS and make this web page dynamic by 
+            using JavaScript. I learned how to create servers using NodeJS and PHP and how to connect a database 
+            to the servers. I learned about C# and ASP.NET and how to connect frontend with backend. 
+            I learned about the web pages’ performance by analyzing these web pages using tools such as 
+            Lighthouse Audit, Devtools Network tab and Page-insight website. I learned some web site 
+            security and vulnerabilities. 
+          </p>
 <hr>
 </section>
 

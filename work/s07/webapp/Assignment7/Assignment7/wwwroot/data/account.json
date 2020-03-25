@@ -19,19 +19,19 @@
   },
   {
     "Number": 42,
-    "Balance": 12,
+    "Balance": 0,
     "Label": "Secret",
     "Owner": 42
   },
   {
     "Number": 44,
-    "Balance": 15,
+    "Balance": 0,
     "Label": "Web",
     "Owner": 10
   },
   {
     "Number": 49,
-    "Balance": 150,
+    "Balance": 177,
     "Label": "Nawar",
     "Owner": 50
   }
